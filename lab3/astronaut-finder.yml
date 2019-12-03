@@ -7,4 +7,6 @@ functions:
     lang: python3-armhf
     handler: ./astronaut-finder
     image: georgenicoll/astronaut-finder:latest
+    environment:
+      write_debug: false
 
