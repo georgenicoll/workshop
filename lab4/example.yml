@@ -1,0 +1,15 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://black:31112
+functions:
+  first:
+    lang: python3-armhf
+    handler: ./first
+    image: georgenicoll/first:latest
+
+  second:
+    lang: python3-armhf
+    handler: ./second
+    image: georgenicoll/second:latest
+

@@ -1,0 +1,12 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://black:31112
+functions:
+  call-sentimentanalysis:
+    lang: python3-armhf
+    handler: ./call-sentimentanalysis
+    image: georgenicoll/call-sentiment-analysis:latest
+    environment:
+      write_debug: false
+

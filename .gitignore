@@ -1,6 +1,2 @@
 template
 build
-bin
-kubectx
-.idea/
-*.iml
